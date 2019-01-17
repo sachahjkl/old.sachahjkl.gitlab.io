@@ -16,7 +16,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     border-bottom: 1px solid white;
 }
 .dark A{
-    color: gray;
+    color: #F46C1E;
 }
 
 
@@ -284,7 +284,8 @@ BODY {
     font-family: Lato,Tahoma,Arial,sans-serif;
     font-weight: 300;
     color: #2b1a1a;
-    height: 100%
+    height: 100%;
+    min-height: 100vh
 }
 
 A {
@@ -297,6 +298,9 @@ A {
 
 A:hover {
     border-bottom-color: #1e90ff
+}
+.dark A:hover {
+    border-bottom-color: #F46C1E
 }
 
 A[rel=external]:hover {
