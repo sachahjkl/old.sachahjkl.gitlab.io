@@ -3,6 +3,37 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     display: block
 }
 
+.dark{
+    background-color: #141516;
+    color: white;
+}
+
+.dark #masthead-name{
+    color: white;
+}
+
+.dark #masthead{
+    border-bottom: 1px solid white;
+}
+.dark A{
+    color: gray;
+}
+
+
+button{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0.2rem 0.4rem;
+    background-color: #141516;
+    color : white;
+    margin-top: 2px;
+}
+
+.dark #main-nav button {
+    background-color: white;
+    color : #141516;
+}
+
 audio,canvas,video {
     display: inline-block
 }
@@ -124,7 +155,6 @@ legend {
 button,input,select,textarea {
     font-family: inherit;
     font-size: 100%;
-    margin: 0
 }
 
 button,input {
@@ -244,7 +274,6 @@ OL,UL {
 
 HTML {
     background-color: #fff;
-    height: 100%
 }
 
 MAIN {
@@ -254,8 +283,8 @@ MAIN {
 BODY {
     font-family: Lato,Tahoma,Arial,sans-serif;
     font-weight: 300;
-    height: 100%;
-    color: #2b1a1a
+    color: #2b1a1a;
+    height: 100%
 }
 
 A {
@@ -318,6 +347,10 @@ H3 {
 .projet {
     border-top: 1px solid #000;
     padding: 2em 0 1em 0
+}
+
+.dark .projet{
+    border-top: 1px solid white
 }
 
 .projet H3 {
@@ -518,7 +551,7 @@ H1 {
     display: block
 }
 
-@media only screen and (min-width: 47.063em) {
+@media only screen and (min-width: 52.063em) {
     #masthead {
         margin-bottom:0
     }
@@ -612,7 +645,7 @@ H1 {
 #page-container {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100vh;
     margin: auto
 }
 
