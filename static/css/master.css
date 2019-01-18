@@ -25,6 +25,7 @@ button{
     border-radius: 3px;
     padding: 0.2rem 0.4rem;
     background-color: #141516;
+    /* background-color: #222324; plus sombre*/
     color : white;
     margin-top: 2px;
 }
