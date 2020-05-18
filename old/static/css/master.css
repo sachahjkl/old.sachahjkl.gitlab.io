@@ -3,6 +3,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     display: block
 }
 
+body{
+	background-image: url("../../img/bg.png");
+}
+
 .dark{
     background-color: #141516;
     color: white;

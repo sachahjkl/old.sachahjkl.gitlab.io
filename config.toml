@@ -1,0 +1,7 @@
+baseURL = "https://sachafroment.fr/"
+languageCode = "fr"
+title = "Sacha Froment : Portfolio"
+theme = "loveit"
+
+[params]
+	version = "0.2.X"
