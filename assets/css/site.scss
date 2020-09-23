@@ -17,12 +17,13 @@ body {
   color: var(--color-text);
   transition: background var(--transition-duration),
     color var(--transition-duration);
-
-  &.light {
-    background: #ffffff;
-    background: var(--color-text);
-    color: #141516;
-    color: var(--color-bg);
+  @media (prefers-color-scheme: light) {
+    & {
+      background: #ffffff;
+      background: var(--color-text);
+      color: #141516;
+      color: var(--color-bg);
+    }
   }
 }
 
@@ -63,22 +64,28 @@ a {
   &:hover {
     box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.2);
 
-    .light & {
-      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    @media (prefers-color-scheme: light) {
+      & {
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 
   &:focus {
     box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.4);
 
-    .light & {
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    @media (prefers-color-scheme: light) {
+      & {
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+      }
     }
   }
 
-  .light & {
-    background-color: var(--color-bg);
-    color: var(--color-text);
+  @media (prefers-color-scheme: light) {
+    & {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+    }
   }
   transition: all 0.2s;
 }
@@ -122,7 +129,7 @@ a {
   &__image {
     align-self: flex-start;
     padding: 1em;
-    margin:auto;
+    margin: auto;
     flex: 1 6 auto;
   }
   &__text {
@@ -130,10 +137,10 @@ a {
   }
 }
 
-.centered{
+.centered {
   display: flex;
   justify-content: center;
-  &__image{
+  &__image {
     flex: 0 1 auto;
   }
 }

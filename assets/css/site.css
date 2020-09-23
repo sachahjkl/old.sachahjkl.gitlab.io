@@ -19,11 +19,13 @@ body {
   transition: background var(--transition-duration), color var(--transition-duration);
 }
 
-body.light {
-  background: #ffffff;
-  background: var(--color-text);
-  color: #141516;
-  color: var(--color-bg);
+@media (prefers-color-scheme: light) {
+  body {
+    background: #ffffff;
+    background: var(--color-text);
+    color: #141516;
+    color: var(--color-bg);
+  }
 }
 
 a {
@@ -69,9 +71,11 @@ a:visited {
           box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.2);
 }
 
-.light .btn:hover {
-  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+@media (prefers-color-scheme: light) {
+  .btn:hover {
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .btn:focus {
@@ -79,14 +83,18 @@ a:visited {
           box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.4);
 }
 
-.light .btn:focus {
-  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+@media (prefers-color-scheme: light) {
+  .btn:focus {
+    -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  }
 }
 
-.light .btn {
-  background-color: var(--color-bg);
-  color: var(--color-text);
+@media (prefers-color-scheme: light) {
+  .btn {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
 }
 
 .navigation__list {
