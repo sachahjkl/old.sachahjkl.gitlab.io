@@ -1,0 +1,139 @@
+* {
+  font-family: sans-serif;
+}
+
+:root {
+  --color-bg: #121212;
+  --color-text: #ffffff;
+  --color-primary: #ff4946;
+  --color-secondary: #4d39ff;
+  --color-link: CornflowerBlue;
+  --color-link--visited: SlateBlue;
+  --transition-duration: 0s;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background var(--transition-duration),
+    color var(--transition-duration);
+
+  &.light {
+    background: #ffffff;
+    background: var(--color-text);
+    color: #141516;
+    color: var(--color-bg);
+  }
+}
+
+a {
+  color: var(--color-link);
+  &:visited {
+    color: var(--color-link--visited);
+  }
+}
+
+// Utilitaires
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+.font-sized {
+  height: 1em;
+}
+
+// Composants
+
+.main {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.btn {
+  border-radius: 3px;
+  padding: 0.2rem 0.4rem;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border: 1px solid transparent;
+
+  &:hover {
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.2);
+
+    .light & {
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &:focus {
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.4);
+
+    .light & {
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .light & {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+  transition: all 0.2s;
+}
+
+.navigation {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &__link {
+    margin: 5px;
+    text-decoration: none;
+
+    &--brand {
+      // font-size: 2rem;
+      &::after {
+        content: "|";
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__logo {
+    position: relative;
+    top: 1px;
+    left: 2px;
+  }
+}
+
+.projet {
+  display: flex;
+
+  &__image {
+    align-self: flex-start;
+    padding: 1em;
+    margin:auto;
+    flex: 1 1 auto;
+  }
+  &__text {
+    flex: 0 0 80%;
+  }
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  &__image{
+    flex: 0 1 auto;
+  }
+}

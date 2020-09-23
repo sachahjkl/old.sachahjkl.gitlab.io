@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site web de Sacha Froment. Contact, CV & articles."
+    />
+    <link rel="canonical" href="http://hjkl.it" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script src="/assets/js/dark-mode.js" defer></script>
+    <title>projets</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__link navigation__link--brand">
+          <img
+            class="navigation__logo pixelated font-sized"
+            src="favicon.ico"
+            alt="favicon"
+          />
+          acha Froment
+        </li>
+        <li><a class="navigation__link" href="/">🏡 accueil</a></li>
+        <li>
+          <a class="navigation__link" href="/projets.html">📁 projets</a>
+        </li>
+        <li>
+          <a class="navigation__link" href="/a-propos.html">📜 à propos</a>
+        </li>
+        <li>
+          <button
+            id="dark-mode-btn"
+            class="navigation__link navigation__btn btn"
+            type="button"
+            off-label="Light mode"
+          >
+            Dark mode
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <h1>projets</h1>
+
+      <p>
+        <img class="font-sized" src="/assets/img/gitlab.png" alt="gitlab" />
+        profil gitlab : <a href="http://gitlab.com/sachahjkl">@sachahjkl</a>
+      </p>
+      <p>
+        <img class="font-sized" src="/assets/img/github.png" alt="github" />
+        profil github : <a href="http://github.com/sachahjkl">@sachahjkl</a>
+      </p>
+
+      <hr />
+
+      <h2>projets notables</h2>
+
+      <article class="projet">
+        <img
+          src="/assets/img/ipc.png"
+          alt="ipc_pic"
+          class="projet__image pixelated"
+        />
+        <section class="projet__text">
+          <h3 class="projet__title">
+            ⚙️<a href="https://gitlab.com/cnam_a1_sys/client_serv_ipc">
+              Architecture des Machines et des Système
+            </a>
+          </h3>
+          <p class="projet__description">
+            L'objectif de ce projet est de mettre en oeuvre un système de
+            processus clients/serveurs permettant d'offrirs des services aux
+            utilisateurs.
+          </p>
+          <p>
+            Afin de mettre en place ce système, une des contraintes est
+            d'utiliser les systèmes de communication inter-processus disponibles
+            au sein des systèmes UNIX. Notamment les tubes nommés(ou non), les
+            files de messages ou encore les sémaphores.
+          </p>
+        </section>
+      </article>
+      <article class="projet">
+        <img
+          src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/17356539/favicon.png"
+          alt="edt  "
+          class="projet__image pixelated"
+        />
+        <section class="projet__text">
+          <h3 class="projet__title">
+            🌐<a href="https://gitlab.com/cnam_a1_sys/client_serv_ipc">
+              espace numérique de travail
+            </a>
+          </h3>
+          <p class="projet__description">
+            Site web de gestionnaire d'emploi du temps, d'élèves & professeurs,
+            cours, devoirs, etc.
+          </p>
+          <p>
+            Déployé sur une instances VPS linux à l'aide du serveur
+            <a href="https://www.nginx.com/">NGINX</a>, une base de données
+            <a href="https://www.postgresql.org/">PostgreSQL</a>, du langage PHP
+            en tandem avec le framework
+            <a href="https://symfony.com/">Symfony</a>. Les échanges HTTP sont
+            sécurisé grâce à un certificat TLS auto-renouvellé
+            <a href="https://letsencrypt.org/fr/">Let's Encrypt.</a>
+          </p>
+        </section>
+      </article>
+      <article class="projet">
+        <img src="/assets/img/bri.png" alt="bri_pic" class="projet__image" />
+        <section class="projet__text">
+          <h3 class="projet__title">
+            🖧<a href="https://gitlab.com/sachahjkl/dut_a2_appref_bri">
+              Plateforme de services dynamiques
+            </a>
+          </h3>
+          <p class="projet__description">
+            Projet Java utilisant une architecture client &lt;-&gt; serveur
+            <em>à la</em> <a href="https://www.osgi.org/">OSGi</a>. L'objectif
+            est de fournir un service à des utilisateurs une plateforme leur
+            permettant d'uploader & partager leurs programmes (suivant un
+            patterne défini) avec d'autres utilisateurs.
+          </p>
+          <p>
+            Ce projet met en place un système d'authentification, d'upload et
+            implémente un certain nombre de services à titre d'exemples.
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
