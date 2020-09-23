@@ -123,10 +123,10 @@ a {
     align-self: flex-start;
     padding: 1em;
     margin:auto;
-    flex: 1 1 auto;
+    flex: 1 6 auto;
   }
   &__text {
-    flex: 0 0 80%;
+    flex: 1 1 80%;
   }
 }
 
