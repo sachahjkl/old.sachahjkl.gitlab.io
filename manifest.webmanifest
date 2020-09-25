@@ -8,16 +8,10 @@
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any"
-    },
-    {
-      "src": "/assets/img/maskable-icon.png",
-      "sizes": "1024x1024",
-      "type": "image/png",
-      "purpose": "maskable"
     }
   ],
   "start_url": "/",
-  "theme_color": "CornflowerBlue",
+  "theme_color": "white",
   "background_color": "white",
   "display": "standalone",
   "scope": "/",
