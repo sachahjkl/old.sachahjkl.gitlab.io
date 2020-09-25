@@ -4,14 +4,15 @@
   "description": "Site web de Sacha Froment",
   "icons": [
     {
-      "src": "/assets/img/favicon-512.png",
+      "src": "/assets/img/regular-icon.png",
+      "sizes": "1024x1024",
       "type": "image/png",
-      "sizes": "512x512"
+      "purpose": "any"
     },
     {
       "src": "/assets/img/maskable-icon.png",
+      "sizes": "1024x1024",
       "type": "image/png",
-      "sizes": "1280x1280",
       "purpose": "maskable"
     }
   ],
