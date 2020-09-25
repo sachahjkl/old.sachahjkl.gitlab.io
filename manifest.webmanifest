@@ -14,19 +14,5 @@
   "theme_color": "white",
   "background_color": "white",
   "display": "standalone",
-  "scope": "/",
-  "shortcuts": [
-    {
-      "name": "accueil",
-      "url": "/index.html"
-    },
-    {
-      "name": "projets",
-      "url": "/projets.html"
-    },
-    {
-      "name": "à propos",
-      "url": "/a-propos.html"
-    }
-  ]
+  "scope": "/"
 }
