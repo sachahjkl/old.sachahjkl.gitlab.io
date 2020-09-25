@@ -1,0 +1,31 @@
+{
+  "short_name": "Sacha Froment",
+  "name": "Site web de Sacha Froment",
+  "description": "mon site web.",
+  "icons": [
+    {
+      "src": "/assets/img/favicon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#6495ed",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#6495ed",
+  "shortcuts": [
+    {
+      "name": "accueil",
+      "url": "/index.html"
+    },
+    {
+      "name": "projets",
+      "url": "/projets.html"
+    },
+    {
+      "name": "à propos",
+      "url": "/a-propos.html"
+    }
+  ]
+}
