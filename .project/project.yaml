@@ -1,8 +1,8 @@
-name: "old.sachahjkl.gitlab.io"
-description: "My personnal website where i put on display projects, news of interest and my résumé."
+name: "old.sachahjkl.github.io"
+description: "https://sachahjkl.github.io/old.sachahjkl.github.io/ - My personnal website where i put on display projects, news of interest and my résumé."
 topics: []
-homepage: ""
+homepage: "https://sachahjkl.github.io/old.sachahjkl.github.io/"
 source:
-  provider: gitlab
+  provider: github
   namespace: "sachahjkl"
-  path: "sachahjkl/old.sachahjkl.gitlab.io"
+  path: "sachahjkl/old.sachahjkl.github.io"
